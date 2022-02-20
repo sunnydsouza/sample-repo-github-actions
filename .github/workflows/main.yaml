@@ -3,7 +3,7 @@ name: Java Semantic Release Example
 on:
   push:
     branches:
-      - master
+      - main
 
 env:
   GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
