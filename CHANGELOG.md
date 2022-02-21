@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+## [1.0.1](https://github.com/sunnydsouza/sample-repo-github-actions/compare/v1.0.0...v1.0.1) (2022-02-21)
+
+
+### Bug Fixes
+
+* added fix for a feature ([cf2da00](https://github.com/sunnydsouza/sample-repo-github-actions/commit/cf2da002ac2aeed04611e8dd0c46338d8720dbc0))
+
 # 1.0.0 (2022-02-20)
 
 
