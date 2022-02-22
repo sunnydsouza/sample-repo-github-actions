@@ -1,5 +1,23 @@
 # Semantic Versioning Changelog
 
+# [2.0.0](https://github.com/sunnydsouza/sample-repo-github-actions/compare/v1.0.1...v2.0.0) (2022-02-22)
+
+
+### Bug Fixes
+
+* **release:** added below fixes ([016246e](https://github.com/sunnydsouza/sample-repo-github-actions/commit/016246e4653ea5496a3c7c830433876e12d875bc))
+
+
+### Performance Improvements
+
+* **release:** added performance improvements ([2c58e64](https://github.com/sunnydsouza/sample-repo-github-actions/commit/2c58e6485b05129305803524ec78acdfade46dcf))
+
+
+### BREAKING CHANGES
+
+* **release:** existing endpoints will change
+Please take backup before proceeding
+
 ## [1.0.1](https://github.com/sunnydsouza/sample-repo-github-actions/compare/v1.0.0...v1.0.1) (2022-02-21)
 
 
