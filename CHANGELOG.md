@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+# [2.1.0](https://github.com/sunnydsouza/sample-repo-github-actions/compare/v2.0.0...v2.1.0) (2022-03-04)
+
+
+### Features
+
+* **test feature:** Added test feature 3 ([44ee195](https://github.com/sunnydsouza/sample-repo-github-actions/commit/44ee195cef841947b869b6782b74295c2867a863))
+
 # [2.0.0](https://github.com/sunnydsouza/sample-repo-github-actions/compare/v1.0.1...v2.0.0) (2022-02-22)
 
 
