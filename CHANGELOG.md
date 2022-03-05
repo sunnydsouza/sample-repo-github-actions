@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+# [3.4.0](https://github.com/sunnydsouza/sample-repo-github-actions/compare/v3.3.0...v3.4.0) (2022-03-05)
+
+
+### Features
+
+* **feature2:** added workflow_dispatch.yaml ([266fc95](https://github.com/sunnydsouza/sample-repo-github-actions/commit/266fc95e1429a7478ae7846e80765cdd64a17d7d))
+
 # [3.3.0](https://github.com/sunnydsouza/sample-repo-github-actions/compare/v3.2.0...v3.3.0) (2022-03-05)
 
 
