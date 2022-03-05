@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+# [3.1.0](https://github.com/sunnydsouza/sample-repo-github-actions/compare/v3.0.0...v3.1.0) (2022-03-05)
+
+
+### Features
+
+* **feature2:** added feature1 in SampleClass2 ([20c0ab3](https://github.com/sunnydsouza/sample-repo-github-actions/commit/20c0ab3928544e189f3fbc8c2c47f9d00a691d9c))
+
 # [3.0.0](https://github.com/sunnydsouza/sample-repo-github-actions/compare/v2.1.0...v3.0.0) (2022-03-04)
 
 
