@@ -1,5 +1,13 @@
 # Semantic Versioning Changelog
 
+## [3.4.1](https://github.com/sunnydsouza/sample-repo-github-actions/compare/v3.4.0...v3.4.1) (2022-03-07)
+
+
+### Bug Fixes
+
+* **ci/cd:** exclude original-.jar from maven shade ([49442d2](https://github.com/sunnydsouza/sample-repo-github-actions/commit/49442d26324bb3d496c4368f4a660e9d44090582))
+* **ci/cd:** exclude original-.jar from maven shade ([a3a8d3e](https://github.com/sunnydsouza/sample-repo-github-actions/commit/a3a8d3e15db3ef674a7fa1d5d0d2003a639f9f00))
+
 # [3.4.0](https://github.com/sunnydsouza/sample-repo-github-actions/compare/v3.3.0...v3.4.0) (2022-03-05)
 
 
