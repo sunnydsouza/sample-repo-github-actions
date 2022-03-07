@@ -12,7 +12,7 @@
     <!-- Typical Name Pattern -->
     <name>${project.groupId}:${project.artifactId}</name>
     <!-- Human Readable description -->
-    <description>Parent pom for the full featured parent pom demo</description>
+    <description>Sample project for uploading artifacts to maven and github. No other purpose. DO NOT USE</description>
     <!-- URL To the project page, usually github project page -->
     <url>https://maven.pkg.github.com/sunnydsouza/sample-repo-github-actions</url>
 
@@ -36,6 +36,11 @@
             <name>GitHub SunnyDsouza Apache Maven Packages</name>
             <url>https://maven.pkg.github.com/sunnydsouza/sample-repo-github-actions</url>
         </repository>
+        <!-- Central Repository -->
+        <snapshotRepository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
     </distributionManagement>
     <developers>
         <developer>
@@ -52,6 +57,62 @@
         <url>https://github.com/sunnydsouza/sample-repo-github-actions</url>
         <tag>sample-repo-github-actions</tag>
     </scm>
+    <profiles>
+        <!-- Deployment profile (required so these plugins are only used when deploying) -->
+        <profile>
+            <id>deploy</id>
+            <build>
+                <plugins>
+                    <!-- Source plugin -->
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-source-plugin</artifactId>
+                        <version>2.4</version>
+                        <executions>
+                            <execution>
+                                <id>attach-sources</id>
+                                <goals>
+                                    <goal>jar-no-fork</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+
+                    <!-- Javadoc plugin -->
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-javadoc-plugin</artifactId>
+                        <version>2.10.4</version>
+                        <executions>
+                            <execution>
+                                <id>attach-javadocs</id>
+                                <goals>
+                                    <goal>jar</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+
+                    <!-- GPG plugin -->
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-gpg-plugin</artifactId>
+                        <version>1.5</version>
+                        <executions>
+                            <execution>
+                                <id>sign-artifacts</id>
+                                <phase>verify</phase>
+                                <goals>
+                                    <goal>sign</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+
     <build>
         <pluginManagement>
             <plugins>
@@ -88,6 +149,20 @@
                 <artifactId>maven-release-plugin</artifactId>
                 <version>3.0.0-M1</version>
             </plugin>
+
+            <!-- Nexus Staging Plugin -->
+            <plugin>
+                <groupId>org.sonatype.plugins</groupId>
+                <artifactId>nexus-staging-maven-plugin</artifactId>
+                <version>1.6.8</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <serverId>ossrh</serverId>
+                    <nexusUrl>https://oss.sonatype.org/</nexusUrl>
+                    <autoReleaseAfterClose>false</autoReleaseAfterClose>
+                </configuration>
+            </plugin>
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
@@ -105,7 +180,7 @@
                    run analysis workers with a specific commit or tag of R5. The shaded JAR is not "attached" to
                    deployments because this will cause it to be renamed to the standard timestamped name and sorted
                    into a Maven repo directory by version number. -->
-<!--                    <shadeTestJar>true</shadeTestJar>-->  <!-- To include test classes as well -->
+                    <!--                    <shadeTestJar>true</shadeTestJar>-->  <!-- To include test classes as well -->
                     <transformers>
                         <transformer
                                 implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
