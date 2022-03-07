@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+## [3.4.2](https://github.com/sunnydsouza/sample-repo-github-actions/compare/v3.4.1...v3.4.2) (2022-03-07)
+
+
+### Bug Fixes
+
+* **ci/cd:** changes in ci.yaml and workflow_dispatch.yaml ([2d5124b](https://github.com/sunnydsouza/sample-repo-github-actions/commit/2d5124bd7170c9a24ff65e5a298cd7d0cd4be6a0))
+
 ## [3.4.1](https://github.com/sunnydsouza/sample-repo-github-actions/compare/v3.4.0...v3.4.1) (2022-03-07)
 
 
