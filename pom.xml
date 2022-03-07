@@ -9,6 +9,22 @@
     <version>3.3.0</version>
     <packaging>jar</packaging>
 
+    <!-- Typical Name Pattern -->
+    <name>${project.groupId}:${project.artifactId}</name>
+    <!-- Human Readable description -->
+    <description>Parent pom for the full featured parent pom demo</description>
+    <!-- URL To the project page, usually github project page -->
+    <url>https://maven.pkg.github.com/sunnydsouza/sample-repo-github-actions</url>
+
+    <!-- License for the project, pick a License from opensource.org -->
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>http://www.opensource.org/licenses/mit-license.php</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
@@ -26,7 +42,7 @@
             <name>Sunny Dsouza</name>
             <email>dsouzasunny1436@gmail.com</email>
             <organization>com.sunnydsouza</organization>
-            <organizationUrl>https://github.com/sunnydsouza/sample-repo-github-actions</organizationUrl>
+            <organizationUrl>https://github.com/sunnydsouza</organizationUrl>
         </developer>
     </developers>
 
@@ -89,10 +105,7 @@
                    run analysis workers with a specific commit or tag of R5. The shaded JAR is not "attached" to
                    deployments because this will cause it to be renamed to the standard timestamped name and sorted
                    into a Maven repo directory by version number. -->
-                    <createSourcesJar>false</createSourcesJar>
-                    <shadedClassifierName>shaded</shadedClassifierName>
-                    <shadedArtifactAttached>true</shadedArtifactAttached>
-                    <finalName>${git.commit.id.describe}</finalName>
+<!--                    <shadeTestJar>true</shadeTestJar>-->  <!-- To include test classes as well -->
                     <transformers>
                         <transformer
                                 implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
@@ -104,6 +117,7 @@
                         <filter>
                             <artifact>*:*</artifact>
                             <excludes>
+                                <excude>META-INF/MANIFEST.MF</excude>
                                 <exclude>META-INF/*.SF</exclude>
                                 <exclude>META-INF/*.DSA</exclude>
                                 <exclude>META-INF/*.RSA</exclude>
