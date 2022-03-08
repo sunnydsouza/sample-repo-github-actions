@@ -67,24 +67,24 @@ jobs:
 #        run: mvn deploy -s $GITHUB_WORKSPACE/settings.xml
 #        env:
 #          GITHUB_TOKEN: ${{ secrets.PERSONAL_GITHUB_TOKEN }}
-  maven-publish:
-    runs-on: ubuntu-latest
-    needs:
-      - build-semantic-release
-    steps:
-      - name: Check out Git repository
-        uses: actions/checkout@v2
-
-      - name: Install Java and Maven
-        uses: actions/setup-java@v1
-        with:
-          java-version: '11'
-          distribution: 'temurin'
-
-      - name: Release Maven package
-        uses: samuelmeuli/action-maven-publish@v1
-        with:
-          gpg_private_key: ${{ env.GPG_PRIVATE_KEY }}
-          gpg_passphrase: ${{ env.GPG_PASSPHRASE }}
-          nexus_username: ${{ env.NEXUS_USERNAME }}
-          nexus_password: ${{ env.NEXUS_PASSWORD }}
+#  maven-publish:
+#    runs-on: ubuntu-latest
+#    needs:
+#      - build-semantic-release
+#    steps:
+#      - name: Check out Git repository
+#        uses: actions/checkout@v2
+#
+#      - name: Install Java and Maven
+#        uses: actions/setup-java@v1
+#        with:
+#          java-version: '11'
+#          distribution: 'temurin'
+#
+#      - name: Release Maven package
+#        uses: samuelmeuli/action-maven-publish@v1
+#        with:
+#          gpg_private_key: ${{ env.GPG_PRIVATE_KEY }}
+#          gpg_passphrase: ${{ env.GPG_PASSPHRASE }}
+#          nexus_username: ${{ env.NEXUS_USERNAME }}
+#          nexus_password: ${{ env.NEXUS_PASSWORD }}
