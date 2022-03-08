@@ -1,5 +1,17 @@
 # Semantic Versioning Changelog
 
+# [3.5.0](https://github.com/sunnydsouza/sample-repo-github-actions/compare/v3.4.3...v3.5.0) (2022-03-08)
+
+
+### Bug Fixes
+
+* **ci/cd:** updates to pom ([9095a84](https://github.com/sunnydsouza/sample-repo-github-actions/commit/9095a84b9a520590eae4436b76044d2865bd93c8))
+
+
+### Features
+
+* **feature2:** added feature3 to SampleClass2 ([7fefed9](https://github.com/sunnydsouza/sample-repo-github-actions/commit/7fefed9e671bfc7a12c727e9f92972802691e667))
+
 ## [3.4.3](https://github.com/sunnydsouza/sample-repo-github-actions/compare/v3.4.2...v3.4.3) (2022-03-07)
 
 
