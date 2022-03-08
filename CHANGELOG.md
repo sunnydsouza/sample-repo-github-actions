@@ -1,5 +1,13 @@
 # Semantic Versioning Changelog
 
+## [3.5.1](https://github.com/sunnydsouza/sample-repo-github-actions/compare/v3.5.0...v3.5.1) (2022-03-08)
+
+
+### Bug Fixes
+
+* **ci/cd:** commented out github-release ([60a418f](https://github.com/sunnydsouza/sample-repo-github-actions/commit/60a418f25ae4a19b6d5b057215de3b87981b65b1))
+* **feature:** fix 5 released ([da8a870](https://github.com/sunnydsouza/sample-repo-github-actions/commit/da8a870f6f2958af756ba24e04c98cacbccc2a39))
+
 # [3.5.0](https://github.com/sunnydsouza/sample-repo-github-actions/compare/v3.4.3...v3.5.0) (2022-03-08)
 
 
