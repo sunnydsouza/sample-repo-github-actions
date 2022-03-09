@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+# [3.9.0](https://github.com/sunnydsouza/sample-repo-github-actions/compare/v3.8.0...v3.9.0) (2022-03-09)
+
+
+### Features
+
+* **SampleClass2:** added feature 7 in SampleClass2 ([0f5befb](https://github.com/sunnydsouza/sample-repo-github-actions/commit/0f5befb33a36a2cb4695917818d6101aa7662621))
+
 # [3.8.0](https://github.com/sunnydsouza/sample-repo-github-actions/compare/v3.7.0...v3.8.0) (2022-03-09)
 
 
