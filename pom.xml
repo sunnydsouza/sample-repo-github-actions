@@ -6,7 +6,7 @@
 
     <groupId>com.sunnydsouza</groupId>
     <artifactId>sample-repo-github-actions</artifactId>
-    <version>3.9.4</version>
+    <version>3.9.5</version>
     <packaging>jar</packaging>
 
     <!-- Typical Name Pattern -->
