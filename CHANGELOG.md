@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+## [3.9.2](https://github.com/sunnydsouza/sample-repo-github-actions/compare/v3.9.1...v3.9.2) (2022-03-09)
+
+
+### Bug Fixes
+
+* **CI/CD:** fix ci.yaml ([d7002e7](https://github.com/sunnydsouza/sample-repo-github-actions/commit/d7002e707d5973401a58f7312dae285a2aa99be3))
+
 ## [3.9.1](https://github.com/sunnydsouza/sample-repo-github-actions/compare/v3.9.0...v3.9.1) (2022-03-09)
 
 
