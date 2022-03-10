@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.sunnydsouza</groupId>
+    <groupId>io.github.sunnydsouza</groupId>
     <artifactId>sample-repo-github-actions</artifactId>
     <version>3.9.15</version>
     <packaging>jar</packaging>
