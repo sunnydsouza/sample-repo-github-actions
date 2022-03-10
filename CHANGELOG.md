@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+# [3.10.0](https://github.com/sunnydsouza/sample-repo-github-actions/compare/v3.9.15...v3.10.0) (2022-03-10)
+
+
+### Features
+
+* **dummy feature 1:** added dummy feature1 in SampleClass1.java ([046a9a4](https://github.com/sunnydsouza/sample-repo-github-actions/commit/046a9a4d729fbe2fa642ab244809256b822864fc))
+
 ## [3.9.15](https://github.com/sunnydsouza/sample-repo-github-actions/compare/v3.9.14...v3.9.15) (2022-03-10)
 
 
