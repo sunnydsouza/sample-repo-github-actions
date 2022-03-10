@@ -66,7 +66,7 @@ jobs:
         run: mvn -B package --file pom.xml
 
       - name: Publish to GitHub Packages Apache Maven
-        run: mvn deploy -s $GITHUB_WORKSPACE/settings.xml
+        run: mvn deploy:deploy-file -DrepositoryId=github -s $GITHUB_WORKSPACE/settings.xml
         env:
           GITHUB_TOKEN: ${{ secrets.PERSONAL_GITHUB_TOKEN }}
   maven-publish:
@@ -90,8 +90,8 @@ jobs:
         with:
           gpg_private_key: ${{ env.GPG_PRIVATE_KEY }}
           gpg_passphrase: ${{ env.GPG_PASSPHRASE }}
-          nexus_username: ${{ env.NEXUS_USERNAME }}
-          nexus_password: ${{ env.NEXUS_PASSWORD }}
+          nexus_username: ${{ env.OSSRH_USERNAME }}
+          nexus_password: ${{ env.OSSRH_PASSWORD }}
 
 #      - name: Build with Maven
 #        run: mvn -B package --file pom.xml
