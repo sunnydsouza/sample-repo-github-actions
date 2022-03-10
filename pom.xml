@@ -61,6 +61,12 @@
         <!-- Deployment profile (required so these plugins are only used when deploying) -->
         <profile>
             <id>deploy</id>
+            <activation>
+                <property>
+                    <name>deploy</name>
+                    <value>staging</value>
+                </property>
+            </activation>
             <build>
                 <plugins>
                     <!-- Source plugin -->
