@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+## [3.12.2](https://github.com/sunnydsouza/sample-repo-github-actions/compare/v3.12.1...v3.12.2) (2022-03-11)
+
+
+### Bug Fixes
+
+* **CI/CD:** updated pom ([24543b9](https://github.com/sunnydsouza/sample-repo-github-actions/commit/24543b95da4f791ae0a2172857492d77644512ba))
+
 ## [3.12.1](https://github.com/sunnydsouza/sample-repo-github-actions/compare/v3.12.0...v3.12.1) (2022-03-11)
 
 
