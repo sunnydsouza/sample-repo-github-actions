@@ -39,7 +39,8 @@
         <!-- Central Repository -->
         <snapshotRepository>
             <id>ossrh</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+<!--            <url>https://oss.sonatype.org/content/repositories/snapshots</url> &lt;!&ndash; Old Url (pre 2021) &ndash;&gt;-->
+            <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
         </snapshotRepository>
     </distributionManagement>
     <developers>
