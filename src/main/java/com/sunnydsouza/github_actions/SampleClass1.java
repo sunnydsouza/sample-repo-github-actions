@@ -8,6 +8,11 @@ public class SampleClass1 {
     void feature1(int a, int b) {
       System.out.println("Dummy feature1:"+a + b);
     }
+
+    void feature2(int a, int b) {
+        System.out.println("Dummy feature2:"+a + b);
+    }
+
     void fix(int a, int b) {
         System.out.println("Dummy fix:"+a + b);
         System.out.println("Testing a fake fix wherein the commit message does not conform to semantic-release");
