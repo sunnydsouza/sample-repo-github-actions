@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+# [3.11.0](https://github.com/sunnydsouza/sample-repo-github-actions/compare/v3.10.0...v3.11.0) (2022-03-10)
+
+
+### Features
+
+* **dummy feature 1:** updated pom.xml ([f753305](https://github.com/sunnydsouza/sample-repo-github-actions/commit/f75330550386ec4a620f5d13537dce44a1cf7810))
+
 # [3.10.0](https://github.com/sunnydsouza/sample-repo-github-actions/compare/v3.9.15...v3.10.0) (2022-03-10)
 
 
