@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+# [3.12.0](https://github.com/sunnydsouza/sample-repo-github-actions/compare/v3.11.0...v3.12.0) (2022-03-11)
+
+
+### Features
+
+* **feature2:** updated SampleClass1.java ([2d7526e](https://github.com/sunnydsouza/sample-repo-github-actions/commit/2d7526e8b640eeadd02870f1f924b8e8daa53bd1))
+
 # [3.11.0](https://github.com/sunnydsouza/sample-repo-github-actions/compare/v3.10.0...v3.11.0) (2022-03-10)
 
 
