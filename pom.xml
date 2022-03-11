@@ -53,7 +53,7 @@
     </developers>
 
     <scm>
-        <connection>scm:git:git://github.com/ManjunathPrabhakar/github-example-package.git</connection>
+        <connection>scm:git:git://github.com/sunnydsouza/github-example-package.git</connection>
         <developerConnection>scm:git:https://github.com/sunnydsouza/sample-repo-github-actions.git</developerConnection>
         <url>https://github.com/sunnydsouza/sample-repo-github-actions</url>
         <tag>sample-repo-github-actions</tag>
