@@ -52,3 +52,18 @@ jobs:
         run: mvn -B package --file pom.xml
       - name: Test with Maven
         run: mvn clean test
+      - name: Test Report
+        uses: dorny/test-reporter@v1
+        if: success() || failure()
+        with:
+          name: Test Results
+          path: ${{ github.workspace }}/target/surefire-reports/*.xml
+          reporter: java-junit
+
+      - name: Upload target folder
+        uses: actions/upload-artifact@v2
+        with:
+          name: target
+          path: |
+            ${{ github.workspace }}/target
+            ${{ github.workspace }}/reports
