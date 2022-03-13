@@ -39,7 +39,7 @@
         <!-- Central Repository -->
         <snapshotRepository>
             <id>ossrh</id>
-<!--            <url>https://oss.sonatype.org/content/repositories/snapshots</url> &lt;!&ndash; Old Url (pre 2021) &ndash;&gt;-->
+            <!--            <url>https://oss.sonatype.org/content/repositories/snapshots</url> &lt;!&ndash; Old Url (pre 2021) &ndash;&gt;-->
             <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
         </snapshotRepository>
     </distributionManagement>
@@ -132,7 +132,26 @@
             </build>
         </profile>
     </profiles>
+    <dependencies>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>3.141.59</version>
+        </dependency>
+        <dependency>
+            <groupId>io.github.bonigarcia</groupId>
+            <artifactId>webdrivermanager</artifactId>
+            <version>5.1.0</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.testng/testng -->
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>7.5</version>
+            <scope>test</scope>
+        </dependency>
 
+    </dependencies>
     <build>
         <pluginManagement>
             <plugins>
