@@ -1,0 +1,58 @@
+name: Java Semantic Release Example
+
+on:
+  push:
+    branches:
+      - develop
+      - feature*
+      - fix*
+
+
+jobs:
+  build:
+    if: "!contains(github.event.head_commit.message, 'skip ci')"
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ ubuntu-latest, macos-latest, windows-latest ]
+        distribution: [ 'temurin' ]
+        java: [ '11' ]
+    steps:
+      - name: Check out Git repository
+        uses: actions/checkout@v3
+        with:
+          ref: 'main'
+      - name: Build on Java ${{ matrix.Java }}
+        uses: actions/setup-java@v2
+        with:
+          java-version: ${{ matrix.java }}
+          distribution: ${{ matrix.distribution }}
+          server-id: github # Value of the distributionManagement/repository/id field of the pom.xml
+          settings-path: ${{ github.workspace }}
+      - name: Build Package
+        run: mvn -B package --file pom.xml
+  tests:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ ubuntu-latest, macos-latest, windows-latest ]
+        distribution: [ 'temurin' ]
+        java: [ '11' ]
+    needs:
+      - build
+    steps:
+      - name: Check out Git repository
+        uses: actions/checkout@v3
+        with:
+          ref: 'main'
+      - name: Build on Java ${{ matrix.Java }}
+        uses: actions/setup-java@v2
+        with:
+          java-version: ${{ matrix.java }}
+          distribution: ${{ matrix.distribution }}
+          server-id: github # Value of the distributionManagement/repository/id field of the pom.xml
+          settings-path: ${{ github.workspace }}
+      - name: Build Package
+        run: mvn -B package --file pom.xml
+      - name: Test with Maven
+        run: mvn clean test
