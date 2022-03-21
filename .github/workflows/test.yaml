@@ -1,4 +1,4 @@
-name: Java Semantic Release Example
+name: Test build on branch
 
 on:
   push:

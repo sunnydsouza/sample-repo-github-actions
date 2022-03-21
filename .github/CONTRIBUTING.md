@@ -1,6 +1,6 @@
 # Contributing to <project-name>.
 
-:+1: :tada: Firstly, thanks for taking the time to contribute! :tada: :+1:
+🙌 Firstly, thanks for taking the time to contribute! 🙌
 
 The following are the set of guidelines for contributing towards this repository on Github. These are mostly guidelines
 , not rules. Use your best judgement, and feel free to propose changes to this project in a pull request.
@@ -59,12 +59,12 @@ PR will be rejected**. To know more about signed commits, check out this [post][
 
 ### Branching strategy
 
-Specific Branching strategy has been defined on this project where **NO COMMITS** are done directly into `master` branch.
+Specific Branching strategy has been defined on this project where **NO COMMITS** are done directly into `main` or `master` branch.
 
 There are 3 main branches:
 - `develop`: All feature branches will be merged into this branch after `Pull Request` review.
 - `release`: When `develop` branch is clean and all CI tests are **green**, then `develop` branch will be merged into this branch via `Pull Request`. After merge, a `beta` release of version would published to Maven central.
-- `master`: After successful Beta testing, `release` branch will then be merged into `master` via `Pull Request`. After merge, final release version cut would published to Maven central.
+- `main` or `master`: After successful Beta testing, `release` branch will then be merged into `master` via `Pull Request`. After merge, final release version cut would published to Maven central.
 
 ### Working on open tickets
 
@@ -76,26 +76,12 @@ Any Pull Request raised should make sure following checks are successful:
 - Pull Request is raised to merge changes to `develop` branch.
 - Commits is GPG signed.
 - There is at least one reviewer.
-- Circle CI tests are green.
+- Github Action tests are green.
 - Branch is up to date with `develop` branch.
-
-### Project tracking
-
-Whatever is being committed to the code base, is tracked against an issue ticket. Hence, each planned versions are being tracked in `Project` tab on GitHub. Hence, it is mandatory to keep the ticket status updated which is being worked upon.
-
-[comment]: <> (### Circle CI pipelines)
-
-[comment]: <> (This framework is configured with Circle CI to run tests on **Chrome browser** to make sure that the framework is healthy. This integration is useful when there are multiple contributors working on the project and it is mandatory to add unit tests for the code. These tests will be executed on every commits to the issue branch.)
-
-[comment]: <> (Following are the checks which are executed:)
-
-[comment]: <> (- Tests coverage)
-
-[comment]: <> (- Static Code analysis)
 
 ### Code Styling
 
-There is always a chance of different code styling when many contributors work together on a project. To make sure every member is using same coding style, it is advisable that you import code styling formatter from the [java formatter][formatter] repository into your IDE.
+There is always a chance of different code styling when many contributors work together on a project.
 
 Make sure to format the code before sending the **Pull Request**.
 
@@ -112,12 +98,9 @@ For assuring quality of framework to prospective users, test coverage plays an i
 If you find any issue in the framework or you have any suggestions for enhancement, please feel free to raise a ticket for it. Together we can make the framework even more effective and easy for other Test Engineers to use it in their daily automation tasks.
 
 [sign-commit]: https://help.github.com/en/articles/signing-commits
-[formatter]: https://github.com/WasiqB/java-formatter
-[tracker]: https://github.com/WasiqB/coteafs-selenium/issues?q=something
-[new issue]: https://github.com/WasiqB/coteafs-selenium/issues/new
 [fork]: https://help.github.com/articles/fork-a-repo/
 [branch]: https://www.atlassian.com/git/tutorials/using-branches
 [setup]: https://help.github.com/articles/setting-your-commit-email-address-in-git
 [commitHelp]: https://github.com/erlang/otp/wiki/Writing-good-commit-messages
 [pr]: https://help.github.com/articles/creating-a-pull-request
-[site]: https://wasiqb.github.io
+[site]: https://sunnydsouza.com
